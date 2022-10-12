@@ -17,6 +17,23 @@
 	</repositories>
 	-->
 
+	<repositories>
+		<repository>
+			<releases>
+				<enabled>false</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<checksumPolicy>ignore</checksumPolicy>
+			</snapshots>
+			<name>maven-central</name>
+			<id>maven-central</id>
+			<url>http://34.101.242.180:8081/repository/maven-central/</url>
+		</repository>
+	</repositories>
+
 	<groupId>com.nsid</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -66,7 +83,7 @@
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap-datepicker</artifactId>
-			<version>1.0.1</version>
+			<version>1.9.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.webjars</groupId>
